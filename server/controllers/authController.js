@@ -147,7 +147,7 @@ export const logout = async (req, res) => {
 
 export const sendVerifyOtp = async (req, res) => {
 	try {
-		const { userId } = req.body;
+		const { userId } = req
 
 		if (!userId) {
 			return res
@@ -195,7 +195,8 @@ export const sendVerifyOtp = async (req, res) => {
 
 // verify email using OTP
 export const verifyEmail = async (req, res) => {
-	const { userId, otp } = req.body;
+	const { otp } = req.body
+	const {userId} = req
 
 	if (!userId || !otp) {
 		return res

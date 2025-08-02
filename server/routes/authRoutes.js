@@ -10,7 +10,7 @@ authRouter
 	.post("/logout", logout)
 	.post("/send-verify-otp", userAuth, sendVerifyOtp)
 	.post("/verify-account", userAuth, verifyEmail)
-	.post("/is-auth", userAuth, isAuthenticated)
+	.get("/is-auth", userAuth, isAuthenticated)
 	.post("/send-reset-otp", sendResetOtp)
 	.post("/reset-password", resetpassword);
 

@@ -3,11 +3,11 @@ import { assets } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { toast } from "react-toastify";
-import axios from "axios";
+
 
 const Login = () => {
 	const navigate = useNavigate();
-	const { backendUrl, setIsLoggedIn, getUserData } = useContext(AppContext);
+	const { backendUrl, setIsLoggedIn, getUserData, axios } = useContext(AppContext);
 
 	const [state, setState] = useState("Login");
 	const [showPassword, setShowPassword] = useState(false);
@@ -18,6 +18,8 @@ const Login = () => {
 	const onSubmitHandler = async (e) => {
 		e.preventDefault();
 
+		axios.defaults.withCredentials = true
+		
 		try {
 			const url =
 				state === "Sign Up"
@@ -35,6 +37,7 @@ const Login = () => {
 
 			if (!data.success) {
 				return toast.error(data.message);
+
 			}
 
 			setIsLoggedIn(true);

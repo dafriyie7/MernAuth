@@ -3,7 +3,7 @@ import userModel from "../models/userModel.js"
 // get user details
 export const getUserData = async (req, res) => {
 	try {
-		const { userId } = req.body
+		const { userId } = req
 		
 		if (!userId) {
 			return res.status(404).json({success: false, message: "User not found"})

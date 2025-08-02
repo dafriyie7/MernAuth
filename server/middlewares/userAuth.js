@@ -20,13 +20,14 @@ const userAuth = async (req, res, next) => {
 			});
 		}
 
-		req.body.userId = decoded.id;
+		// req.body.userId = decoded.id;
+		req.userId = decoded.id
 
 		next();
 	} catch (error) {
 		return res.status(401).json({
 			success: false,
-			message: "Unauthorized or expired token.",
+			message: error.message,
 		});
 	}
 };
