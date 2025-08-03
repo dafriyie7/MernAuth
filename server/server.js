@@ -14,6 +14,7 @@ const allowedOrigins = [
 	"http://localhost:5173",
 	"http://localhost:5174",
 	"https://mern-auth-iota-six.vercel.app",
+	"https://mern-auth-fm9n7gzj7-daniel-afriyies-projects.vercel.app",
 ];
 
 app.use(express.json());
