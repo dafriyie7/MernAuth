@@ -13,7 +13,7 @@ const app = express();
 const allowedOrigins = [
 	"http://localhost:5173",
 	"http://localhost:5174",
-	"https://mern-auth-iota-six.vercel.app/",
+	"https://mern-auth-iota-six.vercel.app",
 ];
 
 app.use(express.json());
