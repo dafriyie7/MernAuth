@@ -19,3 +19,16 @@ It provides secure user authentication with email verification and password rese
 ```bash
 git clone https://github.com/yourusername/MernAuth.git
 cd MernAuth
+```
+
+### Features
+
+User registration & login
+
+JWT authentication
+
+Email verification (OTP)
+
+Password reset with OTP
+
+Protected routes
