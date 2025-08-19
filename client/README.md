@@ -2,9 +2,9 @@
 
 This is the **frontend client** for a MERN authentication system.  
 It provides UI and functionality for user login, email verification, and password reset.  
-The app is built with **React + Vite**, styled with CSS, and integrated with backend authentication APIs.
+The app is built with **React + Vite**, **Tailwind**, and integrated with backend authentication APIs.
 
-[View live demo]()
+[View live demo](https://mern-auth-iota-six.vercel.app/)
 
 ---
 
