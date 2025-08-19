@@ -43,8 +43,8 @@ export const AppContextProvider = ({ children }) => {
 	};
 
 	useEffect(() => {
-		getAuthState()
-	},[])
+		userData && getAuthState()
+	},[userData])
 
 	const value = {
 		backendUrl,
