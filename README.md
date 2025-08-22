@@ -17,7 +17,7 @@ It provides secure user authentication with email verification and password rese
 ### 1. Clone repo
 
 ```bash
-git clone https://github.com/yourusername/MernAuth.git
+git clone https://github.com/dafriyie7/MernAuth.git
 cd MernAuth
 ```
 
