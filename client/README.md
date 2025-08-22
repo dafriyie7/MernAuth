@@ -69,7 +69,7 @@ client/
 1. Clone the repository:
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/dafriyie7/MernAuth.git
    cd MernAuth/client
    ```
 
