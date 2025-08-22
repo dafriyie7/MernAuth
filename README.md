@@ -3,6 +3,8 @@
 **MernAuth** is a full-stack authentication system built with the **MERN stack** (MongoDB, Express, React, Node.js).  
 It provides secure user authentication with email verification and password reset flows.
 
+[View live demo](https://mern-auth-iota-six.vercel.app)
+
 ---
 
 ## Project Structure
